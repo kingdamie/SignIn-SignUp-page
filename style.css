@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    background-color: cornsilk;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    font-family: monospace;
+}
+.container{
+    background-color: wheat;
+    width: 40%;
+    height: max-content;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 5px 5px rgb(184, 182, 182);
+    text-align: center;
+}
+form label{
+    text-align: center;
+    color: black;
+    font-size: 24px;
+}
+form label span{
+    color: red;
+    font-size: 30px;
+    font-weight: 900;
+}
+form input{
+    width: 100%;
+    margin-top: 1.5rem;
+    height: 30px;
+    padding: 0 5px;
+    background-color: wheat;
+    border-style: none;
+    border-bottom: groove;
+    background: none;
+    outline-color: brown;
+}
+form button{
+    color: white;
+    background-color: red;
+    border: hidden;
+    width: 100px;
+    height: 35px;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+form button:hover{
+    transform: scale(.9);
+}
+form p{
+    text-align: left;
+}
+form p a{
+    font-style: italic;
+}
+form span{
+    color: grey;
+}
+@media only screen and (max-width: 640px){
+    .container{
+        width: 70%;
+    }
+}
